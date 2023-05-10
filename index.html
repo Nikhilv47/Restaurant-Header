@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+             <div class="shedule">
+                <img src="./Assets/imgae/icon_phone.png" alt="">
+                <div class="shedule-left">
+                    <div class="phone">+91 987 2342 234</div>
+                    <div class="time">8:00 AM to 6:00 PM</div>
+                </div>
+            </div>
+            <div class="logo"><img src="./Assets/imgae/logo.png" alt=""></div>
+            <div class="cart">
+                <img src="./Assets/imgae/icon_cart.png" alt="">
+                <div class="cart-right">
+                    <div class="amount">&#x20B9 0.00</div>
+                    <div class="item">0 item - view cart</div>
+                </div>
+            </div>
+            <div class="menu-btn">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <ul class="nav ">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Feature</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+<main>
+    <div class="hero">
+        <div class="img">
+            <img src="Assets/imgae/pizza_2.png" alt="">
+        </div>
+        <div class="content">
+            <h1>Lorem, ipsum.</h1>
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, nemo!</p>
+            <div class="btn">VIEW MORE</div>
+        </div>
+    </div>
+</main>
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const nav = document.querySelector('.nav')
+
+        menuBtn.addEventListener('click', function(){
+            this.classList.toggle('active');
+            nav.classList.toggle('active');
+        })
+
+    </script>
+</body>
+</html>
